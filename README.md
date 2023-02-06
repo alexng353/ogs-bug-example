@@ -1,3 +1,7 @@
+See the recreation repository [here](https://github.com/alexng353/ogs-bug-example/tree/main)
+
+### Below is the pasted readme which should contain all the necessary information.
+
 # ogs-bug-example
 
 ## Description
@@ -6,7 +10,7 @@ A repostiory to demonstrate a bug in the open-graph-scraper package above the ve
 
 ## Steps to reproduce
 
-1. Clone this repository
+1. Clone [this repository](https://github.com/alexng353/ogs-bug-example/tree/main)
 2. Run `yarn`
 3. Run `yarn test`
 4. Watch the program segfault
@@ -19,11 +23,11 @@ The program should not segfault.
 
 The program segfaults.
 
-![image](/imgs/segfault.png)
+![image](https://github.com/alexng353/ogs-bug-example/blob/main/imgs/segfault.png)
 
 ## Notes
 
-If you start the server and just go to [http://localhost:3555](http://localhost:3555), the code doesn't segfault. It only segfaults when you run the test.
+If you start the server with `yarn start` and just go to [http://localhost:3555](http://localhost:3555), the code doesn't segfault. It only segfaults when you run the test.
 
 I'm not sure if this means that supertest or jest is at fault, but I'm submitting an issue anyways.
 
