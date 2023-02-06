@@ -7,7 +7,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "tsc && node dist/index.js"
   },
   "dependencies": {
     "@babel/core": "^7.20.12",
