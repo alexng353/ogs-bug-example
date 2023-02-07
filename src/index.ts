@@ -7,7 +7,10 @@ const app = express();
 app.get("/", async (req, res) => {
   const link = req.query.link as string;
   if (!link)
-    return res.status(400).json({ success: false, error: "No link provided" });
+    return res.status(400).json({
+      error: "No link provided",
+      success: false,
+    });
 
   const graph = await ogs({ url: link, downloadLimit: false });
 
